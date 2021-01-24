@@ -1,0 +1,1409 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.nav-mobile {
+  -webkit-transition: 2s;
+  transition: 2s;
+  display: none;
+  width: 100%;
+  z-index: 9999;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+}
+
+.nav-mobile .button-close {
+  position: absolute !important;
+  width: auto !important;
+  height: auto !important;
+  background-color: transparent !important;
+  padding: 10px;
+}
+
+.nav-mobile .button-close i {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-mobile .close {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.76);
+}
+
+.nav-mobile .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(120deg, #8a56e9 0%, #4a74e6 100%);
+}
+
+.nav-mobile .nav-list a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.nav-mobile .nav-list a span {
+  color: transparent;
+}
+
+.nav-mobile .nav-list a:hover span {
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.nav-mobile .nav-list a {
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  width: auto !important;
+  height: auto !important;
+  background-color: transparent !important;
+}
+
+.go-home {
+  padding: 10px 13px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.top-nav {
+  z-index: 9998;
+  background-image: linear-gradient(120deg, #5d29be 0%, #4a74e6 100%);
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  position: fixed;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  padding: 10px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-nav .burger-menu {
+  display: none;
+}
+
+.top-nav .burger-menu i {
+  width: 20px;
+  color: white;
+}
+
+.top-nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.top-nav .nav-list a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.top-nav .nav-list a span {
+  color: transparent;
+}
+
+.top-nav .nav-list a:hover span {
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header {
+  padding: 50px 0 42px 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0) linear-gradient(45deg, #09115E 0%, #4EC2FF 100%) repeat scroll 0 0;
+}
+
+header .about {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+header .about .photo {
+  border-radius: 50px;
+  padding: 15px;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+          box-shadow: inset 0 0 10px #000000;
+}
+
+header .about .photo img {
+  width: 350px;
+}
+
+header .about .text {
+  margin-left: 10px;
+  width: 60%;
+}
+
+header .about .text h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+header .about .text p {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+header .about .text .store {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .about .text .store a {
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  display: block;
+  border-radius: 60px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header .about .text .store a i {
+  margin-right: 5px;
+}
+
+header .about .text .store a:hover {
+  background-color: white;
+  color: aqua;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+header .header-footer-photo {
+  position: absolute;
+  width: 100%;
+  height: 42px;
+  bottom: -1;
+  background-image: url(/img/download.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.how-it-works {
+  position: relative;
+  margin-top: 30px;
+  padding: 100px 0;
+}
+
+.how-it-works .how-it-works-footer-background {
+  position: absolute;
+  bottom: 0;
+  z-index: 9997;
+  width: 100%;
+  height: 335px;
+  background-image: url(/img/about-banner.png);
+  background-position: center;
+}
+
+.how-it-works .top-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.how-it-works .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.how-it-works .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.how-it-works .works {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-it-works .works .about {
+  padding: 10px;
+  width: 500px;
+}
+
+.how-it-works .works .about h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.how-it-works .works .about p {
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.how-it-works .works .screen img {
+  width: 100%;
+}
+
+.feauters {
+  background-color: #F5F5F5;
+  margin-top: 100px;
+}
+
+.feauters .top-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.feauters .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.feauters .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.feauters .feauters-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.feauters .feauters-container .feauters-list {
+  width: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feauters .feauters-container .feauters-list .feauters-about {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feauters .feauters-container .feauters-list .feauters-about .feauters-description {
+  width: 262px;
+}
+
+.feauters .feauters-container .feauters-list .feauters-about .feauters-description h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #808080;
+}
+
+.feauters .feauters-container .feauters-list .feauters-about .feauters-description p {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.feauters .feauters-container .feauters-list .feauters-about .feauters-logo {
+  margin: 0 20px;
+  width: 82px;
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.feauters .feauters-container .feauters-list .feauters-about .feauters-logo .photo {
+  margin: 0 5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.feauters .feauters-container .feauters-list .feauters-about .feauters-logo .photo img {
+  width: 82px;
+  height: 95px;
+}
+
+.feauters .feauters-container .feauters-list .feauters-about .feauters-logo i {
+  color: #808080;
+}
+
+.screenshots {
+  margin-top: 30px;
+}
+
+.screenshots .top-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.screenshots .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.screenshots .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.swiper-container {
+  width: 320px;
+  height: 347px;
+  padding: 50px;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center;
+  background-size: cover;
+  width: 203px;
+  height: 347px;
+}
+
+.swiper-slide img {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+.pricing {
+  padding: 50px 0;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0) linear-gradient(45deg, #09115E 0%, #4EC2FF 100%) repeat scroll 0 0;
+}
+
+.pricing .top-text {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.pricing .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.pricing .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.pricing .top-text h2, .pricing .top-text p {
+  color: white;
+}
+
+.pricing .price-list {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pricing .price-list .price {
+  border-radius: 5px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  width: 290px;
+  background-color: white;
+  text-align: center;
+}
+
+.pricing .price-list .price h2 {
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ED126F;
+}
+
+.pricing .price-list .price h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.pricing .price-list .price h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: #333333;
+}
+
+.pricing .price-list .price h5 {
+  line-height: 10px;
+  margin: 30px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.pricing .price-list .price a {
+  margin: 50px 0;
+  border: 1px solid  #4EC2FF;
+  padding: 11px 40px 11px 40px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #4D4D4D;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pricing .price-list .price a:hover {
+  background-color: #4EC2FF;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.pricing .price-list .larger {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  -webkit-box-shadow: 20px 5px 20px 10px rgba(236, 18, 18, 0.452);
+          box-shadow: 20px 5px 20px 10px rgba(236, 18, 18, 0.452);
+}
+
+.latest-post {
+  background-color: #F5F5F5;
+  margin-top: 100px;
+}
+
+.latest-post .top-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.latest-post .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.latest-post .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.latest-post .latest-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.latest-post .latest-container .latest-size {
+  margin-top: 20px;
+  padding: 5px;
+  border: 1px solid  #DDDDDD;
+  width: 300px;
+}
+
+.latest-post .latest-container .latest-size img {
+  width: 100%;
+}
+
+.latest-post .latest-container .latest-size h2 {
+  margin: 10px 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: #666666;
+}
+
+.latest-post .latest-container .latest-size p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #555555;
+}
+
+.latest-post .latest-container .latest-size .date {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr;
+      grid-template-columns: 1fr 2fr 2fr;
+}
+
+.latest-post .latest-container .latest-size .date .user-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.latest-post .latest-container .latest-size .date .user-photo img {
+  width: 27px;
+}
+
+.latest-post .latest-container .latest-size .date .post-date {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.latest-post .latest-container .latest-size .date .post-date h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #555555;
+}
+
+.video {
+  margin-top: 50px;
+  padding: 150px 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(45deg, #09115E 0%, #4EC2FF 100%) repeat scroll 0 0;
+}
+
+.video .video-player {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.671);
+}
+
+.video .video-player .video-source {
+  position: relative;
+}
+
+.video .video-player .video-source iframe {
+  width: 640px;
+  height: 360px;
+}
+
+.video .video-player .video-source .video-player-close {
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.video .video-player .video-source .video-player-close i {
+  padding: 5px 9px;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.video .top-text {
+  width: 98%;
+  margin: 0 auto;
+  color: white;
+}
+
+.video .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.video .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.video .top-text h2 {
+  color: white;
+}
+
+.video .play {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video .play i {
+  color: white;
+}
+
+.newsletter {
+  padding: 50px 0;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0) linear-gradient(45deg, #09115E 0%, #4EC2FF 100%) repeat scroll 0 0;
+}
+
+.newsletter .top-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.newsletter .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.newsletter .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.newsletter .top-text h2, .newsletter .top-text p {
+  color: white;
+}
+
+.newsletter .get-mail {
+  width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.newsletter .get-mail .input-mail::after {
+  content: "Subscribe";
+  position: absolute;
+  background-color: white;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  padding: 0 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  cursor: pointer;
+}
+
+.newsletter .get-mail .input-mail input {
+  outline: none;
+  position: relative;
+  background-color: #4EC2FF;
+  border: none;
+  width: 500px;
+  height: 50px;
+  border-radius: 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.newsletter .get-mail .input-mail input::-webkit-input-placeholder {
+  padding-left: 10px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.newsletter .get-mail .input-mail input:-ms-input-placeholder {
+  padding-left: 10px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.newsletter .get-mail .input-mail input::-ms-input-placeholder {
+  padding-left: 10px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.newsletter .get-mail .input-mail input::placeholder {
+  padding-left: 10px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.download {
+  margin-top: 50px;
+  padding: 100px 0;
+}
+
+.download .top-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.download .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.download .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.download .link-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.download .link-logo .store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 10px;
+  background-color: black;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.download .link-logo .store:hover {
+  background-image: linear-gradient(120deg, #5d29be 0%, #4a74e6 100%);
+}
+
+.download .link-logo .store img {
+  width: 130px;
+  height: 35px;
+}
+
+@media screen and (max-width: 610px) {
+  .top-nav {
+    -ms-grid-columns: 1fr 3fr 1fr !important;
+        grid-template-columns: 1fr 3fr 1fr !important;
+  }
+  .top-nav .logo {
+    -ms-grid-row: 1 !important;
+    grid-row: 1 !important;
+    -ms-grid-column: 3 !important;
+    grid-column: 3 !important;
+  }
+  .top-nav .burger-menu {
+    cursor: pointer !important;
+    -ms-grid-row: 1 !important;
+    grid-row: 1 !important;
+    -ms-grid-column: 1 !important;
+    grid-column: 1 !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .top-nav .burger-menu:active .nav-mobile {
+    display: block !important;
+  }
+  .top-nav .nav-list {
+    display: none !important;
+  }
+}
+
+.testimonials {
+  margin-top: 20px;
+}
+
+.testimonials .top-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.testimonials .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.testimonials .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.testimonials .size-container {
+  width: auto;
+  padding: 50px;
+}
+
+.testimonials .size-container .review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonials .size-container .review img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 50%;
+}
+
+.testimonials .size-container .review h2 {
+  margin-top: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #555555;
+}
+
+.testimonials .size-container .review h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #3D3D3D;
+}
+
+.testimonials .size-container .review p {
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #555555;
+}
+
+.testimonials .size-container .review .stars i {
+  color: #e98d14;
+}
+
+.get-in-touch {
+  padding-bottom: 20px;
+  margin-top: 20px;
+  background-image: url(/img/map_bg.png);
+  background-color: #F5F5F5;
+  background-position: center;
+  background-size: cover;
+}
+
+.get-in-touch .top-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.get-in-touch .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+.get-in-touch .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.get-in-touch .about-touch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.get-in-touch .about-touch .form-about {
+  position: relative;
+}
+
+.get-in-touch .about-touch .form-about h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  color: #555555;
+  font-weight: 600;
+}
+
+.get-in-touch .about-touch .form-about form {
+  padding-bottom: 50px;
+  width: 535px;
+}
+
+.get-in-touch .about-touch .form-about form .about-user {
+  width: 265px;
+  height: 38px;
+  margin-top: 20px;
+  border: 1px solid  #DDDDDD;
+  color: #1B222A;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.get-in-touch .about-touch .form-about form .text {
+  width: 535px !important;
+  min-height: 250px;
+  max-height: 500px;
+}
+
+.get-in-touch .about-touch .form-about form .send {
+  background-color: white;
+  color: #333333;
+  border: 1px solid  #4EC2FF;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  right: 0;
+  bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 8px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.get-in-touch .about-touch .form-about form .send:hover {
+  background-color: #4EC2FF;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.get-in-touch .about-touch .contact {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.get-in-touch .about-touch .contact .contact-size {
+  width: 90%;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid  #DDDDDD;
+  padding-bottom: 10px;
+}
+
+.get-in-touch .about-touch .contact .contact-size .logo-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+
+.get-in-touch .about-touch .contact .contact-size .logo-contact i {
+  color: #4EC2FF;
+}
+
+.get-in-touch .about-touch .contact .contact-size .contact-description {
+  width: 180px;
+}
+
+.get-in-touch .about-touch .contact .contact-size .contact-description h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #555555;
+}
+
+.get-in-touch .about-touch .contact .contact-size .contact-description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #555555;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    width: 90% !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  .about .photo img {
+    width: 100% !important;
+  }
+  .about .text {
+    margin-top: 20px;
+    width: 100% !important;
+  }
+  .about .text h1 {
+    font-size: 30px !important;
+  }
+  .about .text .store {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .about .text .store a {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .feauters .feauters-container {
+    display: block !important;
+  }
+  .feauters .feauters-container .feauters-img {
+    margin: 20px 0 !important;
+    width: 100% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .feauters .feauters-container .feauters-list {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  .feauters .feauters-container .feauters-list .feauters-about .feauters-description {
+    width: 100%;
+  }
+}
+
+footer {
+  padding: 50px 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(45deg, #09115E 0%, #4EC2FF 100%) repeat scroll 0 0;
+}
+
+footer .footer-text {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 20px;
+  border-top: 1px solid white;
+}
+
+footer .footer-text h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+footer .top-text {
+  width: 98%;
+  margin: 0 auto;
+}
+
+footer .top-text h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #3A444D;
+  text-align: center;
+}
+
+footer .top-text p {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+footer .top-text h2 {
+  color: white !important;
+}
+
+footer .logo-media-list {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .logo-media-list .media-logo {
+  margin: 20px 20px;
+  width: 82px;
+  height: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+footer .logo-media-list .media-logo .photo {
+  margin: 0 5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .logo-media-list .media-logo .photo img {
+  width: 82px;
+  height: 95px;
+}
+
+footer .logo-media-list .media-logo i {
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .video-source iframe {
+    width: 300px !important;
+    height: 180px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .get-mail {
+    width: 300px !important;
+  }
+  .get-mail .input-mail input {
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .form-about form {
+    width: 300px !important;
+  }
+  .form-about form .about-user {
+    width: 148px !important;
+  }
+  .form-about form #text-style {
+    width: 300px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
